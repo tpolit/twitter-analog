@@ -1,0 +1,347 @@
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color :  rgb(113, 201, 87);
+  }
+
+  b{
+    font-size: 18px;
+    padding: 5px;
+    margin:5px;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+  }
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /*                                Structure de page                                    */
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .parentgrid{
+    display: grid;
+    grid-template-columns: 0px 15% 1fr 10% 0px;
+    grid-template-rows: 10px;
+    grid-gap:10px;
+  }
+  .GRecherche {
+    grid-row: 3;
+    grid-column:2;
+  }
+  
+  .GEnteteProfil {
+    grid-row: 2;
+    grid-column: 3;
+  }
+  
+  .GnewMessages{
+    grid-row: 2;
+    grid-column:3;
+  }
+  
+  .GLogout{
+    grid-row: 3;
+    grid-column:4;
+  }
+  .GLogo{
+    grid-row: 2;
+    grid-column:4;
+  }
+  
+  .GContent{
+    grid-row: 3;
+    grid-column: 3;
+  }
+  
+  .GProfileButton{
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .GFollows{
+    grid-row:3;
+    grid-column:2;
+  }
+
+.MessageGrid{
+  display: grid;
+  grid-template-columns:5% 10px 1fr;
+  grid-template-rows: 50% 50%;
+}
+  .GMLikeButton{
+    grid-row:2;
+    grid-column:1;
+  }
+  .GMUserProfil{
+    grid-row:1;
+    grid-column:1;
+  }
+  .GMLogin{
+    grid: 1;
+    grid-column:3;
+  }
+  .GMText{
+    grid-row:2;
+    grid-column:3;
+  }
+  .GMCompteur{
+    grid-row:2;
+    grid-column:2;
+  }
+
+.UserGrid{
+  
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+.UGProfil{
+  grid-row:1;
+  grid-column:1;
+}
+  
+  /*
+  Organisation de la grille comme suit
+  
+  col 0 et 5 vides (pour pas que ce soit collé aux bords de l'ecran)
+  col 2 et 4 => 25%
+  col 3 centre => le reste
+  */
+
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /*                               Fonds et alignements                                  */
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.CenterBlock{
+  margin: 100px auto; 
+  width: 400px ;
+  padding: 2%;
+  background-color: rgb(50, 148, 53);
+  border-radius: 20px;
+}
+
+.newMessages{
+  background-color: #329435;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.Message{
+  background-color: rgb(13, 117, 13);
+  border-radius: 10px;
+  padding:3px;
+}
+.User{
+  background-color: rgb(13, 117, 13);
+  border-radius: 10px;
+  padding:3px;
+}
+.ListeMessage{
+margin: 0 auto; 
+padding: 2%;
+background-color: rgb(50, 148, 53);
+border-radius: 20px;
+}
+.Recherche{
+  margin: 100 auto; 
+  padding: 2%;
+  background-color: rgb(50, 148, 53);
+  border-radius: 20px;
+}
+.EnteteProfil{
+  margin: 0 auto; 
+  padding: 2%;
+  background-color: rgb(50, 148, 53);
+  border-radius: 20px;
+  text-align: center;
+  font-size: large;
+  font-weight: 900;
+  width:fit-content;
+}
+.Followers_block{
+  margin-bottom: 10px;
+  margin-top: 0px;
+  background-color: rgb(50, 148, 53);
+  border-radius: 20px;
+  padding: 2%;
+}
+.droite{
+  align-self:right ;
+}
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /*                       Organisations des listes de balises                           */
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/*Centre de la page*/
+.mainlist{
+  list-style: none;
+  padding: 2px;
+  margin-left: -50px;
+}
+/*Liste en bordure*/
+.list{
+  list-style: none;
+  padding: 2px;
+  margin-left: -25px;
+}
+
+
+  
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /*                                   Les boutons                                       */
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+  button {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    padding: 14px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    }
+   /*Effet quand on survole un bouton*/
+    button:hover {
+      opacity: 0.8;
+    }
+   /*Boutons de confirmation d'un formulaire*/ 
+    .Confirm{
+      width: 400px ;
+      padding: 2%;
+      background-color: rgb(231, 149, 56);
+      margin:0;
+      margin-top:8px;
+      
+    }
+   /*Boutons de changement d'un formulaire à l'autre*/ 
+    .swap{
+      width: 400px ;
+      padding: 2%;
+      background-color: rgb(11, 175, 126);
+      margin:0;
+      margin-top:8px;
+    }
+    .Envoyer{
+      background-color: rgb(11, 175, 126)
+    }
+    .buttonProfil{
+      min-width: 100%;
+      min-height: 100%;
+      border-radius: 50%;
+      background-color:rgb(50, 148, 53) ;
+      margin:0px;
+      padding:0px;
+    }
+    .likeButton{
+      background-color: rgba(0,0,0,0); 
+      padding:0px;
+    }
+    .refresh{
+      background-color: rgb(231, 171, 102);
+      padding:0px;
+      margin-left: 10px;
+      width:36px; 
+    }
+    .boutonFollow{
+      background-color: rgb(216, 124, 20);
+    }
+    .boutonUserProfil{
+      background-color: rgba(0,0,0,0); 
+      padding:0px;
+      margin: 0;
+    }
+  
+  
+  
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /*                                 Boites de texte                                     */
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+input{
+  padding: 12px 20px;
+  display: inline-block;
+  border: 3px solid rgb(204, 204, 204);
+  
+  background-color:rgb(228, 228, 228) ;
+  box-sizing: border-box;
+  height:25;
+  margin: 0 auto; width: 100% ;
+  border-radius: 20px;
+}
+
+.MessageInput{
+  padding: 12px 20px;
+  display: inline-block;
+  border: 3px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  height:100px;
+  margin: 0 auto; width: 100% ;
+}
+.displayText{
+  margin : -15px;
+  padding-left: 100px;
+  width:fit-content;
+  font-size: larger;
+  font-weight: 900;
+}
+.ProfilName{
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.UProfilName{
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+.displayMessage{
+  font-weight: 900;
+  font-size: 21px;
+  margin-top: 1%;
+}
+.displayLikeCounter{
+  margin-top: 214%;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /*                                     Images                                        */
+
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.displayLogoHP{
+  max-width: 100%;
+}
+
+.displayLogoP{
+  max-width: 100%;
+}
+.displayLike{
+  max-width: 100%;
+}
+.displayPDP{
+  max-width: 75%;
+}
+.displayRefresh{
+  max-width: 100%;
+}
