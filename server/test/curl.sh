@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d '{"login":"pikachu","password":"1234"}' http://localhost:4000/api/user/login
